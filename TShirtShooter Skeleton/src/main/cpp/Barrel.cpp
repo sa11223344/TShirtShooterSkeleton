@@ -19,11 +19,11 @@ void Barrel::Stop() {
 }
 
 void Barrel::Up() {
-    elevation_talon->Set(-0.4)
+    elevation_talon->Set(-0.4);
 }
 
 void Barrel::Down() {
-    elevation_talon->Set(0.3)
+    elevation_talon->Set(0.3);
 }
 
 void Barrel::StateMachine() {
