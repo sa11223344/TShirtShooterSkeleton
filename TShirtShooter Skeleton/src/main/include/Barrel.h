@@ -7,7 +7,7 @@
 class Barrel
 {
 private:
-    WPI_TalonSRX *elivation_talon;
+    WPI_TalonSRX *elevation_talon;
     frc::Joystick *controller;
 
 public:
