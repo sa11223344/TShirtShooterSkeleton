@@ -15,7 +15,7 @@ public:
         STOP, UP, DOWN, SLOW, INIT
     };
 
-    States current_states;
+    States current_state;
 
     Barrel();
         void Init();
