@@ -1,5 +1,5 @@
 #include "Barrel.h"
-#include <frc/smartdashboard/SmartDashboard.h>
+
 Barrel::Barrel()
 {
     elevation_talon = new WPI_TalonSRX(28);
@@ -31,23 +31,23 @@ void Barrel::StateMachine() {
     switch (current_state)
     {
      case States::UP:
-     Up();
-     break;
+        Up();
+        break;
 
     case States::DOWN:
-     Down();
-     break;
+         Down();
+        break;
 
     case States::STOP:
-     Stop();
-     break;
+        Stop();
+        break;
 
     case States::SLOW:
-     Slow();
-     break;
+        Slow();
+        break;
 
     case States::INIT:
-     Init();
-     break;
+        Init();
+        break;
     }
 }

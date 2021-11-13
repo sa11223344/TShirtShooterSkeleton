@@ -4,8 +4,7 @@
 #include <ctre/Phoenix.h>
 #include <frc/Joystick.h>
 
-class Barrel
-{
+class Barrel {
 private:
     WPI_TalonSRX *elevation_talon;
     frc::Joystick *controller;
