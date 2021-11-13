@@ -1,5 +1,5 @@
 #include "TeleopStateMachine.h"
-
+#include "Barrel.h"
 TeleopStateMachine::TeleopStateMachine(frc::Joystick *joystick_)
 {
     joystick = joystick_;
@@ -47,6 +47,7 @@ void TeleopStateMachine::StateMachine(){
     switch (current_state)
     {
     case States::INIT:
+        barrel->current_state = Barrel::States::INIT;
         break;
     
     case States::RUN:
@@ -59,18 +60,22 @@ void TeleopStateMachine::StateMachine(){
         break;
 
     case States::UP:
+        barrel->current_state = Barrel::States::UP;
         break;
 
     case States::DOWN:
+        barrel->current_state = Barrel::States::DOWN;
         break;
 
     case States::STOP_BARREL:
+        barrel->current_state = Barrel::States::STOP;
         break;
 
     case States::EMERGENCY:
         break;
 
     case States::SLOW_BARREL:
+        barrel->current_state = Barrel::States::SLOW;
         break;
         
     }

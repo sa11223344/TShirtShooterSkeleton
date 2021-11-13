@@ -26,4 +26,28 @@ void Barrel::Down() {
     elevation_talon->Set(0.3)
 }
 
-void Barrel::StateMachine
+void Barrel::StateMachine() {
+    
+    switch (current_state):
+    {
+     case States::UP:
+     Up();
+     break;
+
+    case States::DOWN:
+     Down();
+     break;
+
+    case States::STOP:
+     Stop();
+     break;
+
+    case States::SLOW:
+     Slow();
+     break;
+
+    case States::INIT:
+     Init();
+     break;
+    }
+}
