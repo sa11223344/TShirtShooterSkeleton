@@ -28,7 +28,7 @@ void Barrel::Down() {
 
 void Barrel::StateMachine() {
     
-    switch (current_state):
+    switch (current_state)
     {
      case States::UP:
      Up();
