@@ -17,7 +17,7 @@ void Robot::RobotInit() {
   controller = new frc::Joystick(0);
   drive = new DriveController();
   barrel = new Barrel();
-  tsm = new TeleopStateMachine(frc::Joystick *controller, Barrel *barrel); 
+  tsm = new TeleopStateMachine(controller, barrel); 
 
 }
 
