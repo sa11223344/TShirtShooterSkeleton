@@ -6,6 +6,8 @@
 
 #include <string>
 
+#include "Barrel.h"
+
 #include <frc/TimedRobot.h>
 #include <frc/smartdashboard/SendableChooser.h>
 #include <frc/Joystick.h>

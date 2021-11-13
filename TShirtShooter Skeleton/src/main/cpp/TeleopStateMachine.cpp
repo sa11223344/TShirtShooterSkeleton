@@ -1,6 +1,6 @@
 #include "TeleopStateMachine.h"
-#include "Barrel.h"
-TeleopStateMachine::TeleopStateMachine(frc::Joystick *joystick_)
+
+TeleopStateMachine::TeleopStateMachine(frc::Joystick *joystick_, Barrel *barrel_)
 {
     joystick = joystick_;
     
