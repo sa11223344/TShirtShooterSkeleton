@@ -3,7 +3,7 @@
 Barrel::Barrel()
 {
     elevation_talon = new WPI_TalonSRX(28);
-    controller = new frc::Joystick(0)
+    controller = new frc::Joystick(0);
 }
 
 void Barrel::Init() {
