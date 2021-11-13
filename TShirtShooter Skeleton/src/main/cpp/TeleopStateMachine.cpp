@@ -3,7 +3,7 @@
 TeleopStateMachine::TeleopStateMachine(frc::Joystick *joystick_, Barrel *barrel_)
 {
     joystick = joystick_;
-    
+    barrel = barrel_;
     current_state = States::STOP;
 }
 
