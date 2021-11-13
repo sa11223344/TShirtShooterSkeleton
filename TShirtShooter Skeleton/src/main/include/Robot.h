@@ -15,6 +15,7 @@
 #include "TeleopStateMachine.h"
 #include "DriveController.h"
 
+
 class Robot : public frc::TimedRobot {
  public:
   void RobotInit() override;
@@ -30,6 +31,7 @@ class Robot : public frc::TimedRobot {
 
 
   frc::Joystick *controller;
+  Barrel *barrel;
   DriveController *drive;
   TeleopStateMachine *tsm;
 
