@@ -1,9 +1,10 @@
 #pragma once 
+#include <ctre/Phoenix.h>
 class Shooter
 {
     private:
-        WPI_talonSRX *comp1_talon;
-        WPI_talonSRX *comp2_talon;
+        WPI_TalonSRX *comp1_talon;
+        WPI_TalonSRX *comp2_talon;
         frc::Solenoid *valve;
     public:
         enum States{
