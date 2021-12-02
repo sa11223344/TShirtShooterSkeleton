@@ -7,6 +7,7 @@
 #include <string>
 
 #include "Barrel.h"
+#include "Shooter.h"
 
 #include <frc/TimedRobot.h>
 #include <frc/smartdashboard/SendableChooser.h>
@@ -32,6 +33,7 @@ class Robot : public frc::TimedRobot {
 
   frc::Joystick *controller;
   Barrel *barrel;
+  Shooter *shooter;
   DriveController *drive;
   TeleopStateMachine *tsm;
 

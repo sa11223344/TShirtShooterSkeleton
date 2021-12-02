@@ -1,9 +1,10 @@
 #include "TeleopStateMachine.h"
 
-TeleopStateMachine::TeleopStateMachine(frc::Joystick *joystick_, Barrel *barrel_)
+TeleopStateMachine::TeleopStateMachine(frc::Joystick *joystick_, Barrel *barrel_, Shooter *shooter_)
 {
     joystick = joystick_;
     barrel = barrel_;
+    shooter = shooter_;
     current_state = States::STOP;
 }
 
@@ -51,12 +52,15 @@ void TeleopStateMachine::StateMachine(){
         break;
     
     case States::RUN:
+        shooter->current_state = Shooter::States::GO;
         break;
 
     case States::STOP:
+        shooter->current_state = Shooter::States::STOP;
         break;
 
     case States::SHOOT:
+        shooter->current_state = Shooter::States::SHOOT;
         break;
 
     case States::UP:
