@@ -1,4 +1,4 @@
-#inculde "Shooter.h"
+#include "Shooter.h"
 Shooter::Shooter()
 {
     comp1_talon = new WPI_talonSRX(0);

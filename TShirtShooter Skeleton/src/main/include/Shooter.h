@@ -2,8 +2,8 @@
 class Shooter
 {
     private:
-        WPI_talnoSRX *comp1_talon;
-        WPI_talnoSRX *comp2_talon;
+        WPI_talonSRX *comp1_talon;
+        WPI_talonSRX *comp2_talon;
         frc::Solenoid *valve;
     public:
         enum States{
