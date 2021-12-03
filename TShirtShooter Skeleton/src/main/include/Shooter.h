@@ -18,5 +18,6 @@ class Shooter
         void Go();
         void Stop();
         void Shoot();
+        void StateMachine();
     
-}
+};
