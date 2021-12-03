@@ -1,5 +1,6 @@
 #pragma once 
 #include <ctre/Phoenix.h>
+#include <frc/Solenoid.h>
 class Shooter
 {
     private:
