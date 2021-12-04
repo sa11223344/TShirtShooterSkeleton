@@ -1,4 +1,5 @@
 #include "Shooter.h"
+
 Shooter::Shooter()
 {
     comp1_talon = new WPI_TalonSRX(1);
@@ -37,5 +38,6 @@ void Shooter::StateMachine() {
             Shoot();
             break;
     }
+    frc::SmartDashboard::PutNumber("Shoot" ,(int) current_state);
 
 }

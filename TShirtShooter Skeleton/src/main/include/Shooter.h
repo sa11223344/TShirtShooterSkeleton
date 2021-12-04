@@ -1,6 +1,7 @@
 #pragma once 
 #include <ctre/Phoenix.h>
 #include <frc/Solenoid.h>
+#include <frc/smartdashboard/SmartDashboard.h>
 class Shooter
 {
     private:
