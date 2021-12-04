@@ -1,9 +1,9 @@
 #include "Shooter.h"
 Shooter::Shooter()
 {
-    comp1_talon = new WPI_TalonSRX(0);
-    comp2_talon = new WPI_TalonSRX(0);
-    valve = new frc::Solenoid(0);
+    comp1_talon = new WPI_TalonSRX(1);
+    comp2_talon = new WPI_TalonSRX(11);
+    valve = new frc::Solenoid(0,2);
     current_state = States::STOP;
 }
 
