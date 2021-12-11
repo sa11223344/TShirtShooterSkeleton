@@ -1,5 +1,4 @@
 #include "TeleopStateMachine.h"
-
 TeleopStateMachine::TeleopStateMachine(frc::Joystick *joystick_, Barrel *barrel_, Shooter *shooter_)
 {
     joystick = joystick_;
